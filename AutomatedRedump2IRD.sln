@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedRedump2IRD", "AutomatedRedump2IRD\AutomatedRedump2IRD.csproj", "{4535930B-6F1D-43C5-B661-3CB8A8332F07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedRedump2IRDRelease", "AutomatedRedump2IRDRelease\AutomatedRedump2IRDRelease.csproj", "{F0DD14E6-BDD1-408B-B826-D45DFDD2F4AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4535930B-6F1D-43C5-B661-3CB8A8332F07} = {4535930B-6F1D-43C5-B661-3CB8A8332F07}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Description = The Original Automated IRD Builder
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4535930B-6F1D-43C5-B661-3CB8A8332F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4535930B-6F1D-43C5-B661-3CB8A8332F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4535930B-6F1D-43C5-B661-3CB8A8332F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4535930B-6F1D-43C5-B661-3CB8A8332F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DD14E6-BDD1-408B-B826-D45DFDD2F4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DD14E6-BDD1-408B-B826-D45DFDD2F4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DD14E6-BDD1-408B-B826-D45DFDD2F4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DD14E6-BDD1-408B-B826-D45DFDD2F4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDE9A6F7-33F3-44CC-A41B-50EA62F8FDF4}
+	EndGlobalSection
+EndGlobal

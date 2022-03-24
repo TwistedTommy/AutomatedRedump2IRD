@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0DD14E6-BDD1-408B-B826-D45DFDD2F4AB}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <ReleaseName>AutomatedRedump2IRD</ReleaseName>
+    <ReleaseAltName>AutomatedRedump2IRDAlt</ReleaseAltName>
+    <ReleaseVersion>0.0.1</ReleaseVersion>
+    <ReleaseDir>$(OutputPath)Release\</ReleaseDir>
+    <ReleasesDir>$(OutputPath)Releases\</ReleasesDir>
+  </PropertyGroup>
+  <Target Name="Build">
+    <CallTarget Targets="Clean" />
+    <CallTarget Targets="CreateReleaseFiles" />
+    <CallTarget Targets="CreateReleasesFiles" />
+  </Target>
+  <Target Name="Clean">
+    <RemoveDir Directories="$(ReleaseDir)" />
+    <MakeDir Directories="$(ReleaseDir)" />
+    <RemoveDir Directories="$(ReleasesDir)" />
+    <MakeDir Directories="$(ReleasesDir)" />
+  </Target>
+  <Target Name="CreateReleaseFiles">
+    <ItemGroup>
+      <MySourceBinaries Include="$(SolutionDir)$(ReleaseName)\bin\$(Configuration)\*.exe;" />
+      <MySourceLibraries Include="$(SolutionDir)$(ReleaseName)\bin\$(Configuration)\System.Data.SQLite.dll;$(SolutionDir)$(ReleaseName)\bin\$(Configuration)\x64\SQLite.Interop.dll;" />
+      <MySourceLibrariesAlt Include="$(SolutionDir)$(ReleaseName)\bin\$(Configuration)\*.dll;$(SolutionDir)$(ReleaseName)\bin\$(Configuration)\x64\*.dll;" />
+      <MySourceDocs Include="$(SolutionDir)$(ReleaseName)\Resources\Docs\**\*.*;" />
+    </ItemGroup>
+    <Copy SourceFiles="@(MySourceBinaries)" DestinationFiles="@(MySourceBinaries->'$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(MySourceLibraries)" DestinationFiles="@(MySourceLibraries->'$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(MySourceDocs)" DestinationFiles="@(MySourceDocs->'$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\Docs\%(Filename)%(Extension)')" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\DB" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\IRDs" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\Logs" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\Reports" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\ROMs" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)\Tmp" />
+    <Copy SourceFiles="@(MySourceBinaries)" DestinationFiles="@(MySourceBinaries->'$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(MySourceLibrariesAlt)" DestinationFiles="@(MySourceLibrariesAlt->'$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(MySourceDocs)" DestinationFiles="@(MySourceDocs->'$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\Docs\%(Filename)%(Extension)')" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\DB" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\IRDs" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\Logs" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\Reports" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\ROMs" />
+    <MakeDir Directories="$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)\Tmp" />
+  </Target>
+  <Target Name="CreateReleasesFiles">
+    <Delete Files="$(ReleasesDir)$(ReleaseName).$(ReleaseVersion).zip" />
+    <ZipDirectory SourceDirectory="$(ReleaseDir)$(ReleaseName).$(ReleaseVersion)" DestinationFile="$(ReleasesDir)$(ReleaseName).$(ReleaseVersion).zip" />
+    <Delete Files="$(ReleasesDir)$(ReleaseAltName).$(ReleaseVersion).zip" />
+    <ZipDirectory SourceDirectory="$(ReleaseDir)$(ReleaseAltName).$(ReleaseVersion)" DestinationFile="$(ReleasesDir)$(ReleaseAltName).$(ReleaseVersion).zip" />
+  </Target>
+</Project>

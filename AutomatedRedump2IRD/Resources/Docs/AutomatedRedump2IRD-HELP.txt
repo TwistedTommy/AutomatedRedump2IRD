@@ -1,0 +1,100 @@
+------------------------------------------------------------------
+Automated Redump 2 IRD - Help version 20220321
+Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved
+------------------------------------------------------------------
+
+[I] About
+[II] Requirements
+[III] Installation
+[IV] How To Build IRDs
+[V] FAQ
+[VI] Contributing
+[VII] Contact
+[VIII] Disclaimers
+
+[I] About
+----------
+Automated Redump 2 IRD, or AR2I is The Original Automated IRD Builder.
+
+Automated Redump 2 IRD can perform the following tasks:  
+- (Build IRDs) will build all the IRDs for all the ISO files and Zipped ISO files in a directory recursively, using hash information from an SQLite DB.
+  
+IRDs cannot be built for ROMs with nonmatching titles. Please use a ROM manager to rename your ROMs to match the correct title in the DB.
+
+[II] Requirements
+------------------
+This app does not ship with the following necessary IsoTools Libraries, which are distributed with IsoTools.
+- DiscUtils.dll
+- Ionic.Zip.dll
+- IsoTools.Common.dll
+- Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll
+
+Place these libraries in the program folder with the AutomatedRedump2IRD.exe file.
+
+IsoTools appears to have been discontinued. We do not know where to find the necessary libraries.
+
+[III] Installation
+-----------------
+Download and unzip the program to any new location that you wish to use. However, this software should be installed as close to the drive's root directory as possible.
+
+Place the IsoTools libraries into the program folder with the AutomatedRedump2IRD.exe file.
+
+I like to put my installation in a directory called AR2I on my C:\ drive. My installation layout looks like this:
+
+C:\AR2I\DB\
+C:\AR2I\IRDs\
+C:\AR2I\Logs\
+C:\AR2I\ROMs\
+C:\AR2I\Tmp\
+C:\AR2I\AutomatedRedump2IRD.exe
+C:\AR2I\DiscUtils.dll
+C:\AR2I\Ionic.Zip.dll
+C:\AR2I\IsoTools.Common.dll
+C:\AR2I\Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll
+
+[IV] How to Build IRDs
+--------------------------------
+- If you have an account at The Ultimate IRD Database http://tuid.mygamesonline.org, set your username and password by editing the Options from the GUI. This will allow you to send IRDs to the database.
+- Rename your ROMs using a ROM manager to match the Redump SQLite DB you are using.
+- Place your Redump SQLite DB file in the DB directory, or set the path to it.
+- Set the other paths and options as needed.
+- Click one of the Build IRDs buttons.
+
+[V] FAQ
+---------
+Q1) I didn't read or follow the instructions in the help file and I can't get this software to work properly. Can you help?
+A1) No.
+
+Q2) Why do I keep getting errors about path and file lengths?
+A2) Obviously, you chose an installation path that is too long. This won't happen if you follow the installation instructions. Please read the Installation Section again and this time follow the instructions.
+
+Q3) I appear to be blocked from some or all databases, or appear to be blocked from using this software. What gives?
+A3) There are way too many reasons why this may or may not be happening. One example might be that you are using a blacklisted or abusive host, which may be blocked by some networks. In many cases, the network filtering may also be completely out of anyone's control.
+
+Q4) Why can't this software find matches based on ROM hashes? My ROMs are not named according to the Redump datafile that corresponds to the matching SQLite DB.
+A4) This software is designed to be used specifically for the Redump database. Finding matches using this info takes a fraction of a second. Finding matches based on hash values could take many days to find a SINGLE match and build a SINGLE IRD. Using hash values to find matches would defy all common sense.
+
+[VI] Contributing
+----------------
+Let's work better together. We are looking to collaborate with like-minded people who want to contribute in any capacity. Collaboration is open to everyone and we need your help if you are a:
+
+* Collector
+* Database Administrator
+* Datter
+* Developer
+* Dumper
+* Graphic Artist
+* Linguist/Translator
+* Player
+* Tester
+
+[VII] Contact
+----------------
+Web: http://ar2i.mygamesonline.org
+GitHub: https://github.com/TwistedTommy/AutomatedRedump2IRD
+
+[VIII] Disclaimers
+----------------
+This software may only be used and/or distributed in accordance with the license with which it is distributed.
+
+We do not upload, share, distribute or provide links to anything illegal, including ROMs or patches.
