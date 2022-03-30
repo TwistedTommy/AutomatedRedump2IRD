@@ -3,10 +3,11 @@
 ## About
 Automated Redump 2 IRD, or AR2I is The Original Automated IRD Builder.  
   
-Automated Redump 2 IRD can perform the following tasks:  
-- (Build IRDs) will build all the IRDs for all the ISO files and Zipped ISO files in a directory recursively, using hash information from an SQLite DB.
+Automated Redump 2 IRD builds all the IRDs for all of the ISO files and Zipped ISO files in a directory recursively, using information from an SQLite DB.  
   
 IRDs cannot be built for ROMs with nonmatching titles. Please use a ROM manager to rename your ROMs to match the correct title in the DB.  
+  
+IRDs are named using the MD5 hash value of the Redump ISO, enabling you to colect the IRDs in the IRDs folder.
 ## Dependencies
 .Net Framework 4  
   
@@ -43,5 +44,7 @@ Let's work better together. We are looking to collaborate with like-minded peopl
 Web: [http://ar2i.mygamesonline.org](http://ar2i.mygamesonline.org "Web")  
 GitHub: [https://github.com/TwistedTommy/AutomatedRedump2IRD](https://github.com/TwistedTommy/AutomatedRedump2IRD "GitHub")  
 ## Disclaimer
+This software may only be used and/or distributed in accordance with the license with which it is distributed.  
+  
 We do not upload, share, distribute or provide links to anything illegal, including ROMs or patches.
-###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-03-19-00
+###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-03-29-00
