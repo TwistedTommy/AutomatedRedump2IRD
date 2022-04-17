@@ -54,7 +54,7 @@ namespace AutomatedRedump2IRD
         #region Members
 
         private readonly string AppName = "Automated Redump 2 IRD";
-        private readonly string AppVersion = "0.0.1";
+        private readonly string AppVersion = "0.0.2";
         private readonly string AppCopyright = "Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved";
         CancellationTokenSource cancellation_ = null;
         private static readonly byte[] D1_IV = { 105, 71, 71, 114, 175, 111, 218, 179, 66, 116, 58, 239, 170, 24, 98, 135 };

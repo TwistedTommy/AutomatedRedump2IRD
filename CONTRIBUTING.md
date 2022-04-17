@@ -12,8 +12,7 @@ Let's work better together. We are looking to collaborate with like-minded peopl
 - Player
 - Tester
 ## Contact
-Web: [http://ar2i.mygamesonline.org](http://ar2i.mygamesonline.org "Web")  
 GitHub: [https://github.com/TwistedTommy/AutomatedRedump2IRD](https://github.com/TwistedTommy/AutomatedRedump2IRD "GitHub")  
 ## Disclaimer
 We do not upload, share, distribute or provide links to anything illegal, including ROMs or patches.
-###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-03-19-00
+###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-04-16-00

@@ -18,7 +18,7 @@
   <PropertyGroup>
     <ReleaseName>AutomatedRedump2IRD</ReleaseName>
     <ReleaseAltName>AutomatedRedump2IRDAlt</ReleaseAltName>
-    <ReleaseVersion>0.0.1</ReleaseVersion>
+    <ReleaseVersion>0.0.2</ReleaseVersion>
     <ReleaseDir>$(OutputPath)Release\</ReleaseDir>
     <ReleasesDir>$(OutputPath)Releases\</ReleasesDir>
   </PropertyGroup>

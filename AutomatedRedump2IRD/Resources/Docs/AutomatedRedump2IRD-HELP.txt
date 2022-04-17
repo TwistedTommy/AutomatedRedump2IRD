@@ -1,5 +1,5 @@
 ------------------------------------------------------------------
-Automated Redump 2 IRD - Help version 20220329
+Automated Redump 2 IRD - Help version 20220416
 Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved
 ------------------------------------------------------------------
 
@@ -91,11 +91,8 @@ Let's work better together. We are looking to collaborate with like-minded peopl
 
 [VII] Contact
 ----------------
-Web: http://ar2i.mygamesonline.org
 GitHub: https://github.com/TwistedTommy/AutomatedRedump2IRD
 
 [VIII] Disclaimers
 ----------------
-This software may only be used and/or distributed in accordance with the license with which it is distributed.
-
 We do not upload, share, distribute or provide links to anything illegal, including ROMs or patches.

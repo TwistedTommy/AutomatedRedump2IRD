@@ -23,6 +23,9 @@ This app does not ship with the following necessary IsoTools Libraries, which ar
 Place these libraries in the AutomatedRedump2IRD/Resources/Libs/IsoTools.1.34.9 project folder.  
   
 IsoTools appears to have been discontinued. We do not know where to find the necessary libraries.  
+## Projects
+- AutomatedRedump2IRD - Windows Forms App
+- AutomatedRedump2IRDRelease - Release Project
 ## How to Build IRDs
 - If you have an account at The Ultimate IRD Database [http://tuid.mygamesonline.org](http://tuid.mygamesonline.org "The Ultimate IRD Database"), set your username and password by editing the Options from the GUI. This will allow you to send IRDs to the database.
 - Rename your ROMs using a ROM manager to match the Redump DB you are using.
@@ -41,10 +44,7 @@ Let's work better together. We are looking to collaborate with like-minded peopl
 - Player
 - Tester
 ## Contact
-Web: [http://ar2i.mygamesonline.org](http://ar2i.mygamesonline.org "Web")  
 GitHub: [https://github.com/TwistedTommy/AutomatedRedump2IRD](https://github.com/TwistedTommy/AutomatedRedump2IRD "GitHub")  
 ## Disclaimer
-This software may only be used and/or distributed in accordance with the license with which it is distributed.  
-  
 We do not upload, share, distribute or provide links to anything illegal, including ROMs or patches.
-###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-03-29-00
+###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-04-16-00
