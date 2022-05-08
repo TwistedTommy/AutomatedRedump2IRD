@@ -7,7 +7,7 @@ Automated Redump 2 IRD builds all the IRDs for all of the ISO files and Zipped I
   
 IRDs cannot be built for ROMs with nonmatching titles. Please use a ROM manager to rename your ROMs to match the correct title in the DB.  
   
-IRDs are named using the MD5 hash value of the Redump ISO, enabling you to colect the IRDs in the IRDs folder.
+IRDs are named using the MD5 hash value of the Redump ISO, enabling you to collect the IRDs in the IRDs folder.
 ## Dependencies
 .Net Framework 4  
   
@@ -47,4 +47,4 @@ Let's work better together. We are looking to collaborate with like-minded peopl
 GitHub: [https://github.com/TwistedTommy/AutomatedRedump2IRD](https://github.com/TwistedTommy/AutomatedRedump2IRD "GitHub")  
 ## Disclaimer
 We do not upload, share, distribute or provide links to anything illegal, including ROMs or patches.
-###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-04-16-00
+###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-05-07-00
