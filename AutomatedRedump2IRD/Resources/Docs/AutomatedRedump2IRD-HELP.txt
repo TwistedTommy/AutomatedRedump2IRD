@@ -1,5 +1,5 @@
 ------------------------------------------------------------------
-Automated Redump 2 IRD - Help version 20220416
+Automated Redump 2 IRD - Help version 20220604
 Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved
 ------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ C:\AR2I\Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll
 
 [IV] How to Build IRDs
 --------------------------------
-- If you have an account at The Ultimate IRD Database http://tuid.mygamesonline.org, set your username and password by editing the Options from the GUI. This will allow you to send IRDs to the database.
+- If you have an account at The Ultimate IRD Database, set your username and password by editing the Options from the GUI. This will allow you to send IRDs to the database.
 - Rename your ROMs using a ROM manager to match the Redump SQLite DB you are using.
 - Place your Redump SQLite DB file in the DB directory, or set the path to it.
 - Set the other paths and options as needed.

@@ -27,7 +27,7 @@ IsoTools appears to have been discontinued. We do not know where to find the nec
 - AutomatedRedump2IRD - Windows Forms App
 - AutomatedRedump2IRDRelease - Release Project
 ## How to Build IRDs
-- If you have an account at The Ultimate IRD Database [http://tuid.mygamesonline.org](http://tuid.mygamesonline.org "The Ultimate IRD Database"), set your username and password by editing the Options from the GUI. This will allow you to send IRDs to the database.
+- If you have an account at The Ultimate IRD Database, set your username and password by editing the Options from the GUI. This will allow you to send IRDs to the database.
 - Rename your ROMs using a ROM manager to match the Redump DB you are using.
 - Place your Redump DB file in the DB directory, or set the path to it.
 - Set the other paths and options as needed.
@@ -47,4 +47,4 @@ Let's work better together. We are looking to collaborate with like-minded peopl
 GitHub: [https://github.com/TwistedTommy/AutomatedRedump2IRD](https://github.com/TwistedTommy/AutomatedRedump2IRD "GitHub")  
 ## Disclaimer
 We do not upload, share, distribute or provide links to anything illegal, including ROMs or patches.
-###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-05-07-00
+###### Copyright (c) 2016-2022 Automated Redump 2 IRD - All Rights Reserved v2022-06-04-00
